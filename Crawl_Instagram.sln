@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crawl_Instagram", "Crawl_Instagram\Crawl_Instagram.csproj", "{79CC706E-E6E4-424F-B657-5021A4C62F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliceSeleniumHelper", "AliceSeleniumHelper\AliceSeleniumHelper.csproj", "{2E0682AE-CDEB-4181-AFF7-722B8E86B3D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79CC706E-E6E4-424F-B657-5021A4C62F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CC706E-E6E4-424F-B657-5021A4C62F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CC706E-E6E4-424F-B657-5021A4C62F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CC706E-E6E4-424F-B657-5021A4C62F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0682AE-CDEB-4181-AFF7-722B8E86B3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0682AE-CDEB-4181-AFF7-722B8E86B3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0682AE-CDEB-4181-AFF7-722B8E86B3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0682AE-CDEB-4181-AFF7-722B8E86B3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C565AAD3-C8F8-497A-AD76-ED9A8CE028C1}
+	EndGlobalSection
+EndGlobal
