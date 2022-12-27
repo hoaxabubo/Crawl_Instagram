@@ -86,28 +86,37 @@ namespace Crawl_Instagram
                         Thread childThread = new Thread(() =>
                     {
 
-                       
+
                         AliceSeleniumHelperReturn re = new AliceSeleniumHelperReturn();
                         while (true)
                         {
-                           List<string> links = CrawlImage.DownloadOnePost(chrome, txtsv.Text);
+                            List<string> links = CrawlImage.DownloadOnePost(chrome, txtsv.Text);
                             if (CrawlImage.ClickNextPost(chrome) == false)
                             {
                                 break;
                             }
+                            
                             foreach (var link in links)
                             {
+                                try
+                                {
+                                    download.DownloadFile(link, $@"{txtsv.Text}\{rnd.Next(111111, 999999)}.png");
+                                }
+                                catch 
+                                {
 
+                                    
+                                }
 
-                                download.DownloadFile(link, $@"{txtsv.Text}\{rnd.Next(1111, 9999)}.png");
+                                
 
 
                             }
                             links.Clear();
-                         
+
                             Thread.Sleep(2000);
                         }
-                      
+
                         if (re.Status)
                         {
                             UpdateDataGridView.UpdateRow(row, AuraeColorEnum.Success, "cStatus", $"Crawl  thành công");
@@ -145,6 +154,11 @@ namespace Crawl_Instagram
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
                 txtsv.Text = fbd.SelectedPath;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
